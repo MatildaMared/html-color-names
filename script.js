@@ -19,12 +19,12 @@ let colorLinks = document.querySelectorAll("li");
 colorLinks.forEach(color => {
     color.addEventListener("click", () => {
         if (color.id === "purple" && !document.querySelector(".colors").classList.contains("colors-purple")) {
-					let heading = document.createElement("h2");
-					heading.textContent = "Purple HTML color names! 🎨";
-					heading.classList.add("colors__heading");
-					document.querySelector(".colors").appendChild(heading);
-					document.querySelector(".colors").classList.add("colors-purple");
-					createColors(purple);
-				}
+            let heading = document.createElement("h2");
+            heading.textContent = "Purple color names! 🎨";
+            heading.classList.add("colors__heading");
+            document.querySelector(".colors").appendChild(heading);
+            document.querySelector(".colors").classList.add("colors-purple");
+            createColors(purple);
+		}
     })
 })

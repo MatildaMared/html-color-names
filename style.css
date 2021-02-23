@@ -51,6 +51,8 @@ body {
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    opacity: 1;
+    animation: fadeIn ease 2s;
 }
 
 .colors__heading {
@@ -71,6 +73,7 @@ body {
 	justify-content: center;
 	align-items: center;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    animation: fadeIn ease 2s;
 }
 
 .color-text {
@@ -79,4 +82,28 @@ body {
 	text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, .1);
     padding: .5rem 1rem;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, .1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .5rem 0;
+}
+
+.footer .copyright {
+	font-family: "Fira Mono", monospace;
+    color: rgba(255, 255, 255, .3);
+    font-size: .8rem;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
 }
