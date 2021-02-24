@@ -2,8 +2,6 @@ const colors = {
     purple: ["lavender", "thistle", "plum", "violet", "orchid", "fuchsia", "magenta", "mediumorchid", "mediumpurple", "blueviolet", "darkviolet", "darkorchid", "darkmagenta", "purple", "indigo", "slateblue", "darkslateblue"]
 }
 
-console.log(colors.purple);
-
 const createColors = (arr) => {
     arr.forEach(color => {
         let colorDiv = document.createElement("div");
@@ -22,6 +20,21 @@ let colorLinks = document.querySelectorAll("li");
 
 colorLinks.forEach(color => {
     color.addEventListener("click", (e) => {
+        // Remove current color-section from HTML if there is one
+        if (document.querySelector('.colors')) {
+            const currentColorSection = document.querySelector('.colors');
+            console.log(currentColorSection);
+            document.querySelector('.colors-wrapper').removeChild(currentColorSection);
+        }
+
+        // Make sure no color has the class "active"
+        const liItems = document.querySelectorAll("li");
+        liItems.forEach(el => {
+            el.classList.remove("active");
+        });
+
+        // Add class "active" for current color
+        e.target.classList.add("active");
 
         // Create section with classname "colors"
         const sectionColors = document.createElement("section");
