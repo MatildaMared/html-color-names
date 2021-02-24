@@ -53,6 +53,7 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
     opacity: 1;
     animation: fadeIn ease 2s;
+    margin-bottom: 5rem;
 }
 
 .colors__heading {
