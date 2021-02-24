@@ -1,5 +1,14 @@
 const colors = {
-    purple: ["lavender", "thistle", "plum", "violet", "orchid", "fuchsia", "magenta", "mediumorchid", "mediumpurple", "blueviolet", "darkviolet", "darkorchid", "darkmagenta", "purple", "indigo", "slateblue", "darkslateblue"]
+    purple: ["lavender", "thistle", "plum", "violet", "orchid", "fuchsia", "magenta", "mediumorchid", "mediumpurple", "blueviolet", "darkviolet", "darkorchid", "darkmagenta", "purple", "indigo", "slateblue", "darkslateblue"],
+    pink: ["pink", "lightpink", "hotpink", "deeppink", "mediumvioletred", "palevioletred"],
+    red: ["indianred", "lightcoral", "salmon", "darksalmon", "lightsalmon", "crimson", "red", "firebrick", "darkred"],
+    orange: [],
+    yellow: [],
+    green: [],
+    blue: [],
+    brown: [],
+    grey: [],
+    white: []
 }
 
 const createColors = (arr) => {
