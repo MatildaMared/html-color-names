@@ -71,6 +71,10 @@ body {
     transform: translateY(-2px);
 }
 
+.nav .nav__item.active {
+    transform: scale(1.2);
+}
+
 .nav .nav__item:active {
     transform: translateY(0);
 }
